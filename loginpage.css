@@ -1,0 +1,67 @@
+*{
+    padding:0px;
+    margin:0px;
+    font-family:"Open Sans",sans-serif;
+}
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.bg-container{
+    background-image:url("loginpage.jpg");
+    height: 100vh;
+    background-size:cover;
+    background-position: center;
+}
+
+.card{
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    border-style:solid;
+    border-color:white;
+    height:330px;
+    width:400px;
+    padding:20px;
+    border-radius:30px;
+}
+.submitbutton{
+    margin-top:15px;
+    margin-right:10px;
+}
+a{
+    color:whitesmoke;
+}
+a:hover{
+    color:orangered;
+}
+
+@media(max-width:320px)
+{
+    .bg-container{
+        background-image:url("loginpage.jpg");
+        height: 100vh;
+        background-size:cover;
+        background-position: center;
+        padding:0;
+        margin:0;
+    }
+    .card{
+        background-color: transparent;
+        backdrop-filter: blur(20px);
+        border-style:solid;
+        border-color:white;
+        height:330px;
+        width:300px;
+        padding:20px;
+        border-radius:30px;
+    }
+    .recaptcha-container {
+        transform: scale(0.8); /* Scale down the reCAPTCHA widget to 80% */
+        -webkit-transform: scale(0.8); /* For Safari */
+        transform-origin: 0 0; /* Ensure the widget scales from the top-left corner */
+        -webkit-transform-origin: 0 0;
+    }
+    
+}

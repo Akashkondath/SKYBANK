@@ -1,0 +1,179 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css?family=Poppins'); 
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.side-panel {
+    background-color: #232740;
+    background-size: cover;
+    min-height: 100%;
+    width: 250px; /* Adjusted width for better responsiveness */
+}
+a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    opacity: 0.5px;
+}
+.allrights {
+    margin-left: 5px; 
+    color: #666;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.tittle {
+    font-size: 36px;
+    text-decoration: none; 
+    color: white;
+    font-family: 'poppins';
+    padding: 5px; 
+    margin-top: 10px;
+}
+
+.user-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-card {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.user-info {
+    color: #495057;
+}
+
+.user-info span {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.section-header {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 1200px) {
+    .side-panel {
+        width: 200px;
+    }
+}
+
+@media (max-width: 992px) {
+    .side-panel {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .user-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .user-card {
+        padding: 15px;
+    }
+
+    .user-info h5 {
+        font-size: 0.9rem;
+    }
+
+    .section-header {
+        font-size: 1.2rem;
+    }
+
+    .tittle {
+        font-size: 28px;
+    }
+
+    .allrights {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .side-panel {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 10px;
+    }
+
+    .user-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .user-card {
+        padding: 10px;
+    }
+
+    .user-info h5 {
+        font-size: 0.8rem;
+    }
+
+    .section-header {
+        font-size: 1rem;
+    }
+
+    .tittle {
+        font-size: 24px;
+    }
+
+    .allrights {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .side-panel {
+        width: 100%;
+        height: auto;
+        padding: 5px;
+    }
+
+    .user-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .user-card {
+        padding: 5px;
+    }
+
+    .user-info h5 {
+        font-size: 0.7rem;
+    }
+
+    .section-header {
+        font-size: 0.9rem;
+    }
+
+    .tittle {
+        font-size: 20px;
+    }
+
+    .allrights {
+        font-size: 0.6rem;
+    }
+}

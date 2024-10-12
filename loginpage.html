@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="loginpage.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="logo.png">
+    <title>Loginpage</title>
+    <link rel="stylesheet" href="loginpage.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <div class="bg-container">
+        <div class="container ">
+            <div class="card">
+                <form  action="login.php" method="post">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1" style="color:gold;font-weight:bold;">Username<span style="color:red">*</span></label>
+                      <input type="text" class="form-control" id="exampleInputEmail1" name="userName" placeholder="Enter bank username" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1" style="color:gold;font-weight:bold;">Password <span style="color:red">*</span></label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Password" required>
+                     
+                    </div>
+                    <div class="recaptcha-container">
+                        <div class="g-recaptcha" data-sitekey="6LfcaSkqAAAAAG2YLErKNFUonSAjW8PoRY25NtSh"></div> <!-- Replace with your site key -->
+                    </div>
+                    <button type="submit" class="btn btn-primary submitbutton">Submit</button>
+                    <button id="loginbackbutton" class="btn btn-primary submitbutton" type="button">Back</button>
+                </form>
+                <a href="newaccount.html" style="text-decoration: underline;">Don't have an account?</a>
+            </div>
+        </div>
+    </div>
+    <script src="loginpage.js"></script>
+</body>
+</html>
