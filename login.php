@@ -10,7 +10,7 @@ $recaptchaResponse = $_POST['g-recaptcha-response']; // Get CAPTCHA response fro
 $error = '';
 
 // Verify CAPTCHA
-$secretKey = '6LfcaSkqAAAAAMp6mTxhgptBmHFtE6ky1luWD02w'; // Replace with your reCAPTCHA secret key
+$secretKey = '6LfDe14qAAAAAFATDCt5pYfQs9x-f5xsXJDT9TNQ'; // Replace with your reCAPTCHA secret key
 $captchaVerifyUrl = 'https://www.google.com/recaptcha/api/siteverify';
 $response = file_get_contents($captchaVerifyUrl . '?secret=' . $secretKey . '&response=' . $recaptchaResponse);
 $responseKeys = json_decode($response, true);
